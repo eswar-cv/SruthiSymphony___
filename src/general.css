@@ -1,0 +1,80 @@
+.centerholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.centerholder * {
+    width: 50%;
+    min-width: 300px;
+    max-width: 400px;
+    margin: 15px;
+    height: calc(var(--header-height));
+    font-size: calc(var(--header-height) * 0.4);
+}
+
+.centerholder button {
+    background-color: rgb(47, 223, 65)
+}
+
+.centerholder span {
+    text-align: center;
+}
+
+#Wait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#HomePage {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#HomePage button {
+    margin: 20px;
+}
+
+#HomePage h2 {
+    margin: 30px;
+}
+
+#HomePage table {
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+table thead th {
+    background-color: #a0522d; /* Light brown accent for header */
+    color: white; /* White text color */
+}
+
+/* Style the table body rows with alternating colors */
+table tbody tr:nth-child(odd) {
+    background-color: #f5f5f5; /* Light color for odd rows */
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ddd; /* Slightly darker color for even rows */
+}
+
+td {
+    padding: 6px;
+}
+
+th {
+    padding: 6px;
+}

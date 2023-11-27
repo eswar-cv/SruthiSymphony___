@@ -1,0 +1,115 @@
+#PlayRecord {
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+#video_end_point, #video_start_point {
+    box-shadow: 0px;
+}
+#VideoHolder {
+    /* background-color: rgb(134, 205, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#VideoHolder video {
+    max-width: 100%;
+    height: 100%;
+}
+#ControlsHolder {
+    background-color: rgb(255, 200, 82);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#AudioHolder {
+    background-color: blue;
+}
+
+#ControlsHolder button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    padding: 0px 10px;
+    height: var(--video-controls-height);
+    text-align: center;
+}
+
+.setTimeDisplay {
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+    margin-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    height: var(--video-controls-height);
+    width: fit-content;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.setTimeReset {
+    margin-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 0px 10px;
+    height: var(--video-controls-height);
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#ControlsHolder audio {
+    width: 220px;
+    margin: auto 0px;
+    height: var(--video-controls-height);
+}
+
+#video_end_point, #video_start_point #ControlsHolder button {
+    box-shadow: 0px;
+    margin-left: 0px;
+}
+
+.setTimeDisplay {
+    margin-right: 0px;
+}
+
+#ControlsHolder audio {
+    margin: auto 20px;
+}
+
+#ControlsHolder .setTimeDisplay {
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.25);
+}
+
+#upload_user_audio {
+    background-color: #41B566;
+}
+
+#root {
+    --video-controls-height: calc(1 * var(--header-height));
+}
+
+
+@media (max-width: 300px) {
+    #PlayRecord {
+        background-color: #ffffff;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+}
+
+@media (min-width: 1024px) and (min-resolution: 300dpi) {
+    #PlayRecord {
+        background-color: #ffffff;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+}
+

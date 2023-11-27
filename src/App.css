@@ -1,0 +1,69 @@
+/* Header and Footer styling starts here */
+header {
+    height: 100%;
+    background-color: var(--header-bg);
+    display: flex;
+    align-items: center;
+    font-size: calc(var(--header-height) * 0.4);
+    background-color: var(--header-bg);
+    color: var(--header-fg);
+    font-weight: 500;
+}
+#header_title {
+    position: absolute;
+    left: 3px;
+}
+#header_user {
+    position: absolute;
+    right: 3px;
+}
+
+header * {
+    height: calc(var(--header-height) * 0.9);
+    display: flex;
+    align-items: center;
+    color: var(--header-fg);    
+}
+
+header button {
+    width: fit-content;
+    height: 100%;
+    background-color: #00000000;
+    border: 0px;
+
+}
+
+footer {
+    height: 100%;
+    background-color: var(--header-bg);
+    color: var(--header-fg);
+}
+/* Header and footer styling ends here */
+
+
+/* Login page starts here */
+
+#LoginSignup {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: var(--container-l1-bg); */
+}
+
+.submitButton {
+    background-color: var(--submit-button-bg);
+    color: var(--submit-button-fg);
+}
+
+.formholder button {
+    margin-top: 30px;
+}
+
+.formtitle {
+    justify-content: center;
+    text-align: center;
+    font-size: calc(var(--header-height) * 0.7);
+}
+/* Login page ends here */
