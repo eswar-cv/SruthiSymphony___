@@ -76,12 +76,20 @@ class raga_identification:
         print(counts)
         print(pred_counts)
         pred_counts.sort(key = lambda x: x[1], reverse = True)
-        max_element = pred_counts[0][0]
-        raga_data = json.load(open(f'raga_metadata/{self.raga_names[self.class_from_argmax[max_element]][0]}.json'))
-        arohanam, avarohanam = raga_data['info'][1]['V'][1], raga_data['info'][2]['V'][1]
-        return {
-            'raga_number': self.class_from_argmax[max_element],
-            'raga_name': self.raga_names[self.class_from_argmax[max_element]][0],
-            'arohanam': arohanam,
-            'avarohanam': avarohanam
-        }
+        try:
+            max_element = pred_counts[0][0]
+            raga_data = json.load(open(f'raga_metadata/{self.raga_names[self.class_from_argmax[max_element]][0]}.json'))
+            arohanam, avarohanam = raga_data['info'][1]['V'][1], raga_data['info'][2]['V'][1]
+            return {
+                'raga_number': self.class_from_argmax[max_element],
+                'raga_name': self.raga_names[self.class_from_argmax[max_element]][0],
+                'arohanam': arohanam,
+                'avarohanam': avarohanam
+            }
+        except:
+            return {
+                'raga_number': 'NA',
+                'raga_name': 'NA',
+                'arohanam': 'NA',
+                'avarohanam': 'NA',
+            }
