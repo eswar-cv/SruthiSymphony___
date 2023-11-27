@@ -10,6 +10,7 @@
 /yt_downloaded_files
 /coverage
 /build
+/__pycache__
 .DS_Store
 .env.local
 .env.development.local
