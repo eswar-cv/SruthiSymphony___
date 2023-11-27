@@ -1,4 +1,4 @@
 [1mImportant: the default model was recently changed to `htdemucs`[0m the latest Hybrid Transformer Demucs model. In some cases, this model can actually perform worse than previous models. To get back the old default model use `-n mdx_extra_q`.
 Selected model is a bag of 1 models. You will see that many progress bars per track.
-Separated tracks will be stored in D:\capstone\react\capstone_ui\temp_files\1701065227.434122\htdemucs
-Separating track temp_files\2023_11_27_11_37_07.056503.wav
+Separated tracks will be stored in D:\capstone\react\capstone_ui\temp_files\1701071865.3026366\htdemucs
+Separating track temp_files\2023_11_27_13_27_26.173297.wav

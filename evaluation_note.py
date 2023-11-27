@@ -4,7 +4,7 @@ class evaluation_note:
 		self.cover = cover
 		self.note_accuracy = 0
 		self.report ={}
-		self.note_names = ["S", "R1", "R2/G1", "R3/G2", "G3", "M1", "M2", "P", "D1", "D2/N1", "N2", "N3","S-next"]
+		self.note_names = ["S", "R1", "R2/G1", "R3/G2", "G3", "M1", "M2", "P", "D1", "D2/N1", "N2", "N3","S-next", None, 'None']
 
 	def evaluate(self):
 		self.check_notes()
